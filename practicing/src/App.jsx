@@ -1,8 +1,10 @@
+import { Header } from "./Header/Header"
+
 function App() {
 
   return (
     <div>
-      <h1>Teste</h1>
+      <Header/>
     </div>
   )
 }
