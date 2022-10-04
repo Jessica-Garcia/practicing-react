@@ -1,0 +1,14 @@
+.buttonLinks {
+    color: var(--gray-100);
+    background: var(--green-300);
+    border-radius: 60px;
+    padding: 6px 25px;
+    border: none;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--gray-100);
+    border-radius: 20px;
+    font-size: 1rem;
+}
