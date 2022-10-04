@@ -21,13 +21,6 @@
     gap: 1rem;
 }
 
-.nav a {
-    text-decoration: none;
-    color: var(--gray-100);
-    border-radius: 20px;
-    padding: 2px 20px;
-    font-size: 1rem;
-}
 
 .green {
     background: var(--green-300);
