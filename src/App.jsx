@@ -1,6 +1,5 @@
 import { Header } from "./components/Header/Header";
 import { TopSection } from "./components/TopSection/TopSection";
-import './global.css';
 
 function App() {
 
