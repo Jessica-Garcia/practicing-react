@@ -1,0 +1,24 @@
+:root{
+    --80: #C7E0FB;
+    --90: #98C4FB;
+    --100: #67A7FC;
+    --150: #769CE9;
+    --200: #4086F5;
+    --300:#1962D8;
+    --400: #353540;
+    --500: #2464DC;
+    --700: #0D0B0C;
+
+    --white: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--700);
+}
