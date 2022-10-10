@@ -1,0 +1,23 @@
+.header{
+    background: var(--80);
+    height: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    text-decoration: none;
+    background: var(--white);
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+.logo img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    margin-left: 2px;
+}
