@@ -1,12 +1,10 @@
-import { Header } from "./components/Header/Header";
-import { TopSection } from "./components/TopSection/TopSection";
+import { Feed } from "./Pages/Feed/Feed";
 
 function App() {
 
   return (
     <div>
-      <Header/>
-      <TopSection/>
+      <Feed/>
     </div>
   )
 }
