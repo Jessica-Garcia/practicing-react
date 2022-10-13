@@ -17,6 +17,10 @@ export function Post({author, publishedAt, content}) {
         addSuffix: true
     })
 
+    const setContentLineByType = (line) => {
+        return line.type === 'paragraph' ? <p>{line.content}</p> : <a href="#">{line.content}</a>
+    }
+
     return (
         <section className={style.container}>
             <article className={style.post}>
@@ -38,9 +42,9 @@ export function Post({author, publishedAt, content}) {
                     </div>
                 </header>
                 <div className={style.postContent}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, non!</p>
-                    <a href="#">Lorem.ipsum/dolor.</a>
+                    {
+                        content.map(setContentLineByType)
+                    }
                 </div>
             </article>
             <article>

@@ -14,7 +14,7 @@ const posts = [
         publishedAt: new Date('2022-10-10 20:00:00'),
         content: [
             {type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'},
-            {type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'},
+            {type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur adipisicing.'},
             {type: 'Link', content: 'Lorem.ipsum/dolor.'}
         ]
     },
