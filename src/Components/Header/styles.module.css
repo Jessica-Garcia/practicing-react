@@ -1,5 +1,5 @@
 .header{
-    background: var(--80);
+    background: var(--400);
     height: 5.5rem;
     display: flex;
     justify-content: center;
@@ -7,17 +7,24 @@
 }
 .logo {
     text-decoration: none;
-    background: var(--white);
-    width: 5rem;
-    height: 5rem;
-    text-align: center;
+    background: var(--400);
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
+    border-right: 3px var(--500) solid;
+    border-bottom: 3px var(--500) solid;
+    border-left: 2px var(--white) solid;
+    border-top: 2px var(--white) solid;
     
 }
 .logo img {
     width: 5rem;
     height: 5rem;
     object-fit: cover;
-    margin-left: 2px;
+    border-radius: 50%;
+    /* margin-bottom: 10px; */
 }

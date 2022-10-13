@@ -1,7 +1,183 @@
 .container {
-    background: var(--80);
+    background: var(--400);
+    color: var(--90);
     width: 100%;
     border-radius: 15px;
     height: 100%;
     margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.post{
+    padding: .2rem;
+    border-bottom: var(--200) solid 1px;
+}
+
+.postInfo{
+    padding: .2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.postAuthor{
+    padding: .2rem;
+    display: flex;
+    gap: .5rem;
+}
+.authorInfo{
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.time {
+    padding: .2rem;
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.postContent {
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.postContent p{
+    line-height: 1.6;
+    margin-top: .5rem;
+    color: var(--100);
+    font-size: 0.95rem;
+}
+
+.postContent a{
+    line-height: 1.6;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--80);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+
+}
+
+.commentText {
+    margin-top: 0.5rem;
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.commentText label{
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.commentText textarea{
+    background: var(--500);
+    border: 0;
+    resize: none;
+    height: 6rem;
+    width: 100%;
+    border-radius: 8px;
+    line-height: 1.6;
+    color: var(--90);
+    font-size: .9rem;
+    padding: .8rem;
+}
+
+.commentText button{
+    color: var(--100);
+    font-weight: 700;
+    border: var(--100) solid 2px;
+    margin-top: .3rem;
+    padding: .8rem 3rem;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background .5s, color .5s, border-color 0.5s, font-size 0.5s;
+    font-size: .9rem;
+}
+
+.commentText button:hover{
+    background-color: var(--700);
+    color: var(--80);
+    border-color: var(--700);
+    font-size: 0.95rem;
+}
+
+.commentText footer {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.commentText:focus-within footer {
+    visibility: visible;
+    max-height: none;
+}
+
+.commentsContainer{
+    padding: .2rem;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+
+}
+.oneCommentContainer {
+    display: flex;
+    gap: .5rem;
+
+}
+
+.commentContent {
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.comment {
+    background: var(--300);
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.comment p {
+    padding: .2rem;
+    font-size: 0.9rem;
+}
+
+.commentInfo{
+    padding: .2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameAndTimeContainer{
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    font-size: .9rem;
+}   
+.nameAndTimeContainer time {
+    font-size: .7rem;
+    margin-top: .3rem;
+}
+.likes button{
+    padding: .2rem;
+    margin: .2rem;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    color: var(--100);
+    background: transparent;
+    border: 0;
+}
+
+.likes button span::before {
+    content: '\2022';
+    margin-right: .2rem;
 }

@@ -4,8 +4,8 @@
     border-radius: 15px;
     overflow: hidden;
     align-items: center;
-    color: var(--500);
-    background: var(--80);
+    color: var(--90);
+    background: var(--400);
     height: 21rem;
     gap: .4rem;
     /* margin: 0 1.5rem; */
@@ -20,13 +20,8 @@
 
 }
 
-.profileImg{
-    width: 4rem;
-    height: 4rem;
+.avatarContainer{
     margin-top: -2rem;
-    border-radius: 8px;
-    border: 4px solid var(--700);
-    outline: 2px solid var(--200);
 }
 
 .footer {
@@ -39,9 +34,9 @@
 
 .footer a{
     text-decoration: none;
-    color: var(--200);
+    color: var(--100);
     font-weight: 700;
-    border: var(--200) solid 2px;
+    border: var(--100) solid 2px;
     padding: .8rem 3rem;
     margin: 1.6rem 1rem;
     border-radius: 10px;
@@ -51,11 +46,15 @@
     align-items: center;
     justify-content: center;
     gap: .5rem;
-    transition: background 1s, color 1s;
+    transition: background .5s, color .5s, border-color 0.5s, font-size 0.5s;
     width: 100%;
+    font-size: 0.9rem;
+
 }
 
 .footer a:hover{
-    background-color: var(--500);
-    color: var(--white);
+    background-color: var(--700);
+    color: var(--80);
+    border-color: var(--700);
+    font-size: 0.95rem;
 }
