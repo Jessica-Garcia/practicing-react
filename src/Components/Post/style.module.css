@@ -3,11 +3,11 @@
     color: var(--90);
     width: 100%;
     border-radius: 15px;
-    height: 100%;
     margin-right: 2rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 3rem;
+    margin-bottom: 2rem;
 }
 
 .post{
@@ -120,64 +120,3 @@
     max-height: none;
 }
 
-.commentsContainer{
-    padding: .2rem;
-    display: flex;
-    align-items: flex-start;
-    margin-top: 1rem;
-
-}
-.oneCommentContainer {
-    display: flex;
-    gap: .5rem;
-
-}
-
-.commentContent {
-    padding: .2rem;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-.comment {
-    background: var(--300);
-    border-radius: 8px;
-    padding: 0.5rem;
-}
-
-.comment p {
-    padding: .2rem;
-    font-size: 0.9rem;
-}
-
-.commentInfo{
-    padding: .2rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nameAndTimeContainer{
-    padding: .2rem;
-    display: flex;
-    flex-direction: column;
-    font-size: .9rem;
-}   
-.nameAndTimeContainer time {
-    font-size: .7rem;
-    margin-top: .3rem;
-}
-.likes button{
-    padding: .2rem;
-    margin: .2rem;
-    display: flex;
-    gap: .5rem;
-    align-items: center;
-    color: var(--100);
-    background: transparent;
-    border: 0;
-}
-
-.likes button span::before {
-    content: '\2022';
-    margin-right: .2rem;
-}
