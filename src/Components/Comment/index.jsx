@@ -5,18 +5,6 @@ import { Avatar } from '../Avatar';
 export function Comment () {
     return (
         <>
-            <article>
-                <form className={style.commentText}>
-                    <label htmlFor="commentText">Deixe seu comentário</label>
-                    <textarea 
-                        name="commentText" 
-                        id="commentText"
-                    />
-                    <footer>
-                        <button type='submit'>Publicar</button>
-                    </footer>
-                </form>
-            </article>
             <article className={style.commentsContainer}>
                 <div className={style.oneCommentContainer}>
 

@@ -3,11 +3,11 @@
     color: var(--90);
     width: 100%;
     border-radius: 15px;
-    height: 100%;
     margin-right: 2rem;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 3rem;
+    margin-bottom: 2rem;
 }
 
 .post{
@@ -62,3 +62,61 @@
     font-size: 0.95rem;
 
 }
+
+.commentText {
+    margin-top: 0.5rem;
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.commentText label{
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.commentText textarea{
+    background: var(--500);
+    border: 0;
+    resize: none;
+    height: 6rem;
+    width: 100%;
+    border-radius: 8px;
+    line-height: 1.6;
+    color: var(--90);
+    font-size: .9rem;
+    padding: .8rem;
+}
+
+.commentText button{
+    color: var(--100);
+    font-weight: 700;
+    border: var(--100) solid 2px;
+    margin-top: .3rem;
+    padding: .8rem 3rem;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background .5s, color .5s, border-color 0.5s, font-size 0.5s;
+    font-size: .9rem;
+}
+
+.commentText button:hover{
+    background-color: var(--700);
+    color: var(--80);
+    border-color: var(--700);
+    font-size: 0.95rem;
+}
+
+.commentText footer {
+    visibility: hidden;
+    max-height: 0;
+}
+
+.commentText:focus-within footer {
+    visibility: visible;
+    max-height: none;
+}
+
