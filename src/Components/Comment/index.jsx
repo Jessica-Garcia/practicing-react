@@ -10,7 +10,7 @@ export function Comment () {
 
                     <Avatar 
                         hasBorder={false}
-                        src={"https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60h=500"}
+                        src="https://images.unsplash.com/photo-1583813611092-d9158078a457?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60h=500"
                     />
                     <div className={style.commentContent}>
                         <div className={style.comment}>
