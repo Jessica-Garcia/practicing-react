@@ -2,7 +2,7 @@ import style from './style.module.css'
 import { HandsClapping, Trash } from 'phosphor-react';
 import { Avatar } from '../Avatar';
 
-export function Comment () {
+export function Comment ({content}) {
     return (
         <>
             <article className={style.commentsContainer}>
@@ -23,7 +23,7 @@ export function Comment () {
                                 </div>
                                 <Trash size={24}/>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, minus.</p>
+                            <p>{content}</p>
 
                         </div>
                         <div className={style.likes}>
