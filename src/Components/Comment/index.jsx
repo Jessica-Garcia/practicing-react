@@ -2,7 +2,12 @@ import style from './style.module.css'
 import { HandsClapping, Trash } from 'phosphor-react';
 import { Avatar } from '../Avatar';
 
-export function Comment ({content}) {
+export function Comment ({content, onDeleteComment}) {
+    
+    const handleDeleteComment = () => {
+        onDeleteComment(content)
+    }
+
     return (
         <>
             <article className={style.commentsContainer}>
@@ -21,7 +26,9 @@ export function Comment ({content}) {
                                         Há 1 hora
                                     </time>
                                 </div>
-                                <Trash size={24}/>
+                                <button onClick={handleDeleteComment} className={style.trash}>
+                                    <Trash size={24}/>
+                                </button>
                             </div>
                             <p>{content}</p>
 
