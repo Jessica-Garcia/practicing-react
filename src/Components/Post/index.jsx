@@ -38,8 +38,16 @@ export function Post({author, publishedAt, content}) {
         locale: ptBR,
         addSuffix: true
     })
+
+    const deleteComment = (commentForDelete) => {
+        const newListWithoutDeletedComment = comments.filter(comment => comment !== commentForDelete)
+        setComments(newListWithoutDeletedComment)
+    }
+
     const setContentLineByType = (line) => {
-        return line.type === 'paragraph' ? <p>{line.content}</p> : <a href="#">{line.content}</a>
+        return line.type === 'paragraph' ? 
+            <p key={line.content}>{line.content}</p> : 
+            <a href="#" key={line.content}>{line.content}</a>
     }
 
     return (
@@ -84,8 +92,10 @@ export function Post({author, publishedAt, content}) {
             </article>
             {
                 comments.map(comment => {
-                    return <Comment 
+                    return <Comment
+                    key={comment} 
                         content={comment}
+                        onDeleteComment={deleteComment}
                     />
                 })
             }
