@@ -47,6 +47,20 @@
     font-size: .7rem;
     margin-top: .3rem;
 }
+
+.trash {
+    background-color: var(--300);
+    border: none;
+    color: var(--100);
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.trash:hover {
+    cursor: pointer;
+    border: var(--100) solid 1px;
+}
+
 .likes button{
     padding: .2rem;
     margin: .2rem;
