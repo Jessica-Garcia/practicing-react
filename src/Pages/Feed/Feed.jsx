@@ -13,9 +13,9 @@ const posts = [
         },
         publishedAt: new Date('2022-10-10 20:00:00'),
         content: [
-            {type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'},
-            {type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur adipisicing.'},
-            {type: 'Link', content: 'Lorem.ipsum/dolor.'}
+            {type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur adipisicin!'},
+            {type: 'paragraph', content: 'Lorem ipsum dolor sit ame adipisicing.'},
+            {type: 'Link', content: 'Lorem.ipsum/do-lor.'}
         ]
     },
     {
@@ -27,9 +27,9 @@ const posts = [
         },
         publishedAt: new Date('2022-10-9 20:00:00'),
         content: [
-            {type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'},
-            {type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'},
-            {type: 'Link', content: 'Lorem.ipsum/dolor.'}
+            {type: 'paragraph', content: 'Lorem ipsum dolor amet consectetur adipisicing elit.'},
+            {type: 'paragraph', content: 'Lorem ipsum  sit amet consectetur adipisicing elit.'},
+            {type: 'Link', content: 'Lorem.ips-um/dolor.'}
         ]
     },
     {
@@ -41,9 +41,9 @@ const posts = [
         },
         publishedAt: new Date('2022-10-8 20:00:00'),
         content: [
-            {type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'},
-            {type: 'paragraph', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'},
-            {type: 'Link', content: 'Lorem.ipsum/dolor.'}
+            {type: 'paragraph', content: 'Lorem dolor sit amet consectetur adipisicing elit.'},
+            {type: 'paragraph', content: 'Lorem ipsum dolor sit consectetur adipisicing elit...'},
+            {type: 'Link', content: 'Lor-em.ipsum/dolor'}
         ]
     }
 
