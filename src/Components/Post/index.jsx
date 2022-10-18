@@ -14,7 +14,7 @@ export function Post({author, publishedAt, content}) {
     ])
     
     const handleNewCommentChange = (e) => {
-        
+        e.target.setCustomValidity('')
         setNewCommentText(e.target.value);
     }
     
@@ -26,7 +26,12 @@ export function Post({author, publishedAt, content}) {
         setNewCommentText('')
     }
     
+    const handleInvalidText = (e) => {
+        e.target.setCustomValidity('Este campo é obrigatório!')
+    }
     
+    const isInvalidText = newCommentText.length === 0
+
     const formatedDate = format(
         publishedAt, 
         "dd 'de' LLLL 'de' yyyy 'às' HH:mm'h'", {
@@ -84,9 +89,13 @@ export function Post({author, publishedAt, content}) {
                         id="commentText"
                         onChange={handleNewCommentChange}
                         value={newCommentText}
+                        onInvalid={handleInvalidText}
+                        required
                     />
                     <footer>
-                        <button type='submit'>Publicar</button>
+                        <button type='submit' disabled={isInvalidText}>
+                            Publicar
+                        </button>
                     </footer>
                 </form>
             </article>
