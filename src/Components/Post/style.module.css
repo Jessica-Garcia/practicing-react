@@ -103,7 +103,12 @@
     font-size: .9rem;
 }
 
-.commentText button:hover{
+.commentText button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.commentText button:not(:disabled):hover{
     background-color: var(--700);
     color: var(--80);
     border-color: var(--700);
